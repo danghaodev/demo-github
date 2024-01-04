@@ -1,0 +1,71 @@
+:root {
+  --clr-gold: #c59d5f;
+  --spacing: 0.25rem;
+}
+.darkTheme {
+  background-color: black;
+  color: white;
+}
+.menuContainer {
+  width: 450px;
+  margin: 0 auto;
+}
+.menuBtn {
+  text-transform: uppercase;
+  border: 2px solid var(--clr-gold);
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--clr-gold);
+  width: 70px;
+  height: 30px;
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuFrame {
+  border: 5px solid var(--clr-gold);
+  border-radius: 5px;
+  width: 250px;
+  height: 150px;
+}
+
+.menuImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menuTitle {
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  font-weight: bold;
+}
+.menuPrice {
+  text-transform: uppercase;
+  color: var(--clr-gold);
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .menuContainer {
+    width: 800px;
+  }
+  .menuBtn {
+    width: 120px;
+    height: 35px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menuContainer {
+    width: 1000px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menuContainer {
+    width: 85%;
+  }
+}

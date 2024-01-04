@@ -1,0 +1,52 @@
+.container {
+  width: 350px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: calc(50% - 125px);
+  margin-top: 150px;
+  background-color: rgb(161, 197, 230);
+}
+
+.numpadContainer {
+  width: 80%;
+  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(99, 92, 92);
+}
+.delBtn {
+  composes: btn;
+  background-color: rgb(177, 93, 93);
+}
+.equalBtn {
+  composes: btn;
+  width: 100%;
+}
+.displayInput {
+  width: 85%;
+  height: 45px;
+  font-size: 25px;
+  text-align: right;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.displayResult {
+  composes: displayInput;
+  margin-bottom: 0px;
+  border: none;
+  background-color: transparent;
+  color: rgb(14, 179, 69);
+  font-size: 50px;
+}
