@@ -12,6 +12,7 @@ import RandomQuote from "./random-quote/RandomQuote";
 import MenuList from "./menu/MenuList";
 import Reviews from "./review/Reviews";
 import TabList from "./tab/TabList";
+import Timeline from "./timeline/TimeLine";
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
           <Route path="/randomQuote" exact element={<RandomQuote />} />
           <Route path="/menu" exact element={<MenuList />} />
           <Route path="/tab" exact element={<TabList />} />
+          <Route path="/review" exact element={<Reviews />} />
+          <Route path="/timeline" exact element={<Timeline />} />
         </Routes>
       </BrowserRouter>
     </>

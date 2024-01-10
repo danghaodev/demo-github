@@ -1,0 +1,66 @@
+.timeLineConainer {
+  background-color: #ffffff;
+  box-shadow: 0 3px 0 rgba(19, 18, 18, 0.3);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 20px;
+}
+
+.timeLineIcon {
+  width: 35px;
+  height: 35px;
+  background-color: #ee4d4d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeLineTitleLeft,
+.timeLineTitleRight {
+  text-transform: uppercase;
+  color: #fff;
+  padding: 8px;
+  background-color: #ee4d4d;
+  position: relative;
+}
+
+.timeLineTitleLeft::before,
+.timeLineTitleRight::before {
+  content: "";
+  left: -10px;
+  top: 28%;
+  position: absolute;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 10px solid #ee4d4d;
+}
+
+.timeLineButton {
+  width: 85px;
+  height: 35px;
+  text-transform: uppercase;
+  color: #ee4d4d;
+  background-color: transparent;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ee4d4d;
+  box-shadow: 2px 5px #ee4d4d;
+}
+.timeLineButton:hover {
+  transform: translate(2px, 5px);
+  box-shadow: none;
+}
+
+@media screen and (min-width: 576px) {
+  .timeLineTitleLeft::before {
+    content: "";
+    left: 100%;
+    top: 28%;
+    position: absolute;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-left: 10px solid #ee4d4d;
+  }
+}
