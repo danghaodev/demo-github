@@ -58,6 +58,16 @@ const NavigationMenu = () => {
                 <NavLink to="/tab">Tab</NavLink>
               </Nav.Link>
             </Nav.Item>
+            <Nav.Item>
+              <Nav.Link>
+                <NavLink to="/review">Review</NavLink>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link>
+                <NavLink to="/timeline">Timeline</NavLink>
+              </Nav.Link>
+            </Nav.Item>
           </Nav>
         </Container>
       </Navbar>
